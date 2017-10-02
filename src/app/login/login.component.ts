@@ -10,25 +10,6 @@ import { Router } from "@angular/router";
 export class LoginComponent {
 
 
-  constructor(private router: Router, private loginService: LoginService) { }
-
-  logOn(user, password) {
-
-    this.loginService.logOn(user, password)
-      .subscribe(
-      login => this.processarLogin(login),
-      error => this._processaError(error));
-  }
-
-  processarLogin(login: any) {
-    console.log('USUARIO', login);
-    localStorage['token'] = login.token;
-    this.router.navigate(['/']);
-  }
-
-  _processaError(error: any) {
-    alert('Usuário ou senha invalidos!')
-    console.log(error);
-  }
+  constructor(private router: Router, private loginService: LoginService) { }  
 
 }
