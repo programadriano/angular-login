@@ -1,6 +1,6 @@
-# AngularNovatec
+# Angular Standard Login
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+This project was created to Help someone to begin a project with a easy way.
 
 ## Development server
 
